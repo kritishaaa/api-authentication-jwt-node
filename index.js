@@ -7,6 +7,7 @@ const connectDb= require('./database/connectDb')
 
 const app= express();
 
+app.use(express.json());
 //middleware
 app.use('/api/user', authRouter);
 
